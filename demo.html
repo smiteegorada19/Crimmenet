@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrimeNet - Connecting People, Fighting Crime</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+<!-- Top Bar -->
+<div class="top-bar bg-dark text-white py-2 fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <strong>CrimeNet</strong> | Crime Reporting Portal
+        </div>
+        <div>
+            <span class="me-3">Language:</span>
+            <a href="#" class="text-white me-2">EN</a>
+            <a href="#" class="text-white me-2">हिंदी</a>
+            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Main Navbar -->
+<nav class="navbar navbar-expand-lg py-3 fixed-top" style="top: 40px;"> <!-- Adjusted position -->
+    <div class="container">
+        <!-- <img src="Source/crimenetlogo-removebg-preview.png" alt="CrimeNet" width="130" height="111"> -->
+        <!-- <img src="Source/crimenetlogo.png" alt="CrimeNet" width="130" height="111"> -->
+        <a class="navbar-brand me-3" style="font-family:'Times New Roman';">
+            <div>
+                <strong><img src="Source/crimenetlogom-removebg-preview.png" alt="CrimeNet" width="280" height="280"></strong>             </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li style="color: aliceblue; font-family: 'Times New Roman', Times, serif;"> <h1>Crime Reporting Portal</h1></li>/
+                <a href="login.html" class="btn btn- btn-lg me-4"></a>
+            </ul>
+        </div>
+        <a class="navbar-brand me-3" style="font-family:'Times New Roman';">
+            <div>
+                <strong><img src="Source/Satyamev-Jayate-Indian-National-Emblem-Wallpaper-Mural-M-removebg-preview.png" alt="CrimeNet" width="80" height="80"></strong>             </div>
+        </a>
+    </div>
+</nav>
+
+<!-- Second Navbar (Below Main Navbar) -->
+<div class="second-navbar bg-dark text-white py-2 fixed-top shadow-lg" style="top: 120px;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex flex-wrap">
+            <a class="text-white me-4 fw-bold nav-link bg-success text-white" href="main.html">Home</a>
+            
+            <div class="dropdown me-4  text-white">
+                <a class="text-white fw-bold dropdown-toggle nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Register a Complaint
+                </a>
+                <ul class="dropdown-menu animate-dropdown bg-warning text-white">
+                    <li><a class="dropdown-item" href="financial-fraud.html">Women/Children Related Crime</a></li>
+                    <li><a class="dropdown-item" href="identity-theft.html">Financial-fraud</a></li>
+                    <li><a class="dropdown-item" href="online-harassment.html">Other crime</a></li>
+                </ul>
+            </div>
+            
+            <a class="text-white me-4 fw-bold nav-link  text-white" href="track-complaint.html">Track </a>
+            
+            <div class="dropdown me-4  text-white">
+                <a class="text-white fw-bold dropdown-toggle nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Report & Check Suspect
+                </a>
+                <ul class="dropdown-menu animate-dropdown bg-warning text-white">
+                    <li><a class="dropdown-item" href="financial-fraud.html">Suspect Repository</a></li>
+                    <li><a class="dropdown-item" href="identity-theft.html">Report Suspect</a></li>
+                    <li><a class="dropdown-item" href="online-harassment.html"> File an Appeal with GAC</a></li>
+                </ul>
+            </div>
+            
+            <div class="dropdown me-4  text-white">
+                <a class="text-white fw-bold dropdown-toggle nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Volunteer
+                </a>
+                <ul class="dropdown-menu animate-dropdown bg-warning text-white">
+                    <li><a class="dropdown-item" href="report-cybercrime.html">Volunteer Concept</a></li>
+                    <li><a class="dropdown-item" href="report-fraud.html">Terms & conditions</a></li>
+                    <li><a class="dropdown-item" href="report-fraud.html">Become a Volunteer</a></li>
+                    <li><a class="dropdown-item" href="report-fraud.html">unlawful Content</a></li>
+                    <li><a class="dropdown-item" href="login.html.html">login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex align-items-center me-4">
+            <a href="login.html" class="btn btn-warning btn-lg me-4">Login</a>
+            <a href="signup.html" class="btn btn-warning btn-lg me-4">Signup</a>
+        </div>
+        <div>
+            <a href="survey.html" class="btn btn-outline-light btn-sm px-3 fw-bold">Citizen Survey</a>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (for dropdowns to work) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+    
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero" style="background-image: url('Top-Cybersecurity-Initiatives-by-the-Government-of-India.jpg');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1>Welcome to CrimeNet</h1>
+                        <p>Empowering communities to report and manage crimes effectively.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero" style="background-image: url('Source/slide1.png');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1>Secure and Reliable</h1>
+                        <p>Your trusted platform for crime reporting and case tracking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero" style="background-image: url('Source/slide2.png');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1>Empowering Communities</h1>
+                        <p>Taking a step towards justice, one report at a time</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero" style="background-image: url('https://www.thoughtco.com/thmb/Gy6mE2S9kzZtMjznHXc-Z16w83s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/usa--new-york-state--new-york-city--crime-scene-barrier-tape-160018693-5ad2a55afa6bcc00368f0d73.jpg');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1>For a Safer Tomorrow</h1>
+                        <p>Together, we build safer communities for everyone</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="hero" style="background-image: url('Source/slide3.png');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <h1>Bridging the Gap</h1>
+                        <p>Be a part of the solution. Help make a difference in your community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    
+    
+    <!-- About Us Section https://cdn.pixabay.com/photo/2017/09/19/16/00/cyber-security-2765707_960_720.jpg -->
+  <section id="about" class="py-5 bg-success">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Image -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src= "source/crimenetlogo.png" alt="About Us Image" class="img-fluid rounded shadow">
+            </div>
+            <!-- Right Content -->
+            <div class="col-md-6">
+                <h1 class="mb-3"> <i class="fas fa-shield-alt"></i>Our Mission </h1>
+                <p> At CrimeNet, we are committed to creating a safer and more secure community by bridging the gap between citizens and law enforcement agencies. Our platform empowers individuals to report crimes, track their cases, and stay informed about incidents in their local areas. By leveraging advanced technology, we aim to simplify communication, enhance transparency, and foster trust among the community.  
+                </p>
+                <p>
+                    CrimeNet is more than just a tool; it’s a movement towards proactive crime prevention and accountability. We believe that every individual has the power to make a difference, and together, we can build a world where safety and justice prevail. Join us in our mission to connect people and fight crime for a brighter and safer tomorrow..
+                </p>
+                <div class="d-flex align-items-center me-4">
+                    <a href="#signup.html" class="btn btn-warning btn-lg me-4">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Features Section -->
+    <div class="features" id="features">
+        <h2> <i class="fas fa-server"></i>Our Features</h2>
+        <div class="row">
+            <div class="col-md-4 feature-item">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.JwS-5BSEDBuG7mX__6k2wAHaHa&w=200&h=200&c=7" alt="Report Incidents">
+                <h4>Report Incidents</h4>
+                <p>Quickly report any suspicious activity or crime directly from your device.</p>
+            </div>            
+            <div class="col-md-4 feature-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" alt="Track Complaints">
+                <h4>Track Complaints</h4>
+                <p>Easily track the status of your complaints and updates.</p>
+            </div>
+            <div class="col-md-4 feature-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/711/711245.png" alt="Community Alerts">
+                <h4>Community Alerts</h4>
+                <p>Stay informed with real-time alerts about your locality.</p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center w-100">
+                <a href="features.html" class="btn btn-warning btn-lg">Learn More</a>
+            </div>            
+        </div>
+    </div>
+    
+
+<!-- Information Section -->
+<div class="container my-5 info-section ">
+    <div class="row text-center">
+        <h2 
+        style="font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 40px;
+        border: 5px outset #1a3520; 
+        border-radius: 10px;">
+        <i class="fas fa-bullhorn"></i>
+        Report A Crime
+        </h2>
+        <!-- Card 1 -->
+        <div class="col-md-4" >
+            <div class="card p-3 shadow hover-effect">
+                <img src="https://assets.entrepreneur.com/content/3x2/2000/20200307064735-WD10copy.jpeg" class="card-img-top" alt="Report Crime">
+                <div class="card-body">
+                    <h5 class="card-title"> Women's safety in India </h5>
+                    <p class="card-text">Measure to reduce a crime against Women</p>
+                    <a href="#" class="btn btn-primary">REPORT</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4" >
+            <div class="card p-3 shadow hover-effect">
+                <img src="https://pix4free.org/assets/library/2021-07-08/originals/corruption.jpg" class="card-img-top" alt="FAQs">
+                <div class="card-body">
+                    <h5 class="card-title">Corruption and its impact on society</h5>
+                    <p class="card-text">Challenges in governance.</p>
+                    <a href="#" class="btn btn-primary">REPORT</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4" >
+            <div class="card p-3 shadow hover-effect">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.OY2YlSdUVelIwzcGqk4PNAHaE8&pid=Api&P=0&h=180" class="card-img-top" alt="Resources">
+                <div class="card-body">
+                    <h5 class="card-title">Other Crimes</h5>
+                    <p class="card-text">Access resources to protect yourself online.</p>
+                    <a href="#" class="btn btn-primary">REPORT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="vertical-marquee" style="background-color: bisque;">
+    <div class="marquee-header" style="width: 100%; border-radius: 90px;">
+        <h2 style=
+        "font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 40px;
+        text-align: center; 
+        color: #ffffff; background: linear-gradient(90deg, #1a3520, #16a085); 
+        padding: 10px; 
+        border-radius: 10px;
+        border: 2px outset #1a3520;"><i class="fas fa-clipboard-list"></i>Latest Announcements</h2>
+    </div>
+    <div class="marquee-content">
+        <ul>
+            <li><span class="new-tag">New</span> 
+                <a href="crime-prediction-tool.html">AI-based crime prediction tool is now available for testing!</a>
+            </li>
+            <li><span class="new-tag">New</span> 
+                <a href="helpline-chat.html">Emergency helpline chat support is now live 24/7.</a>
+            </li>
+            <li><span class="new-tag">New</span> 
+                <a href="events/community-safety-workshop.html">Community safety workshop scheduled for March 10th.</a>
+            </li>
+            <li>
+                <a href="case-status-update.html">Reminder: Update your case status before February 28th to avoid closure.</a>
+            </li>
+            <li><span class="new-tag">New</span> 
+                <a href="crime-heatmap.html">Interactive crime heatmap added for real-time updates.</a>
+            </li>
+            <li>
+                <a href="safety-tips.html">Public safety tips: Avoid sharing personal details on unknown calls or messages.</a>
+            </li>
+            <li><span class="new-tag">New</span> 
+                <a href="report-crime.html">Crime reporting system now supports image and video uploads.</a>
+            </li>
+            <li>
+                <a href="events/crime-awareness-seminar.html">Reminder: Next crime awareness seminar on March 15th at the city hall.</a>
+            </li>
+        </ul>        
+    </div>
+</div>
+
+<!-- Information Section -->
+<div class="container my-5 info-section" style="object-fit: cover; border-radius: 5px;">
+    <div class="row text-center">
+        <h2 style="font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 40px;
+        border: 5px outset #1a3520; 
+        border-radius: 10px;"> 
+        <i class="fas fa-tools"></i>Learning Corner <i class="fas fa-hands-helping"></i></h2>
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card p-3 shadow hover-effect">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.VzHVWvaJyukXjeknWa67TAHaFj&pid=Api&P=0&h=180" class="card-img-top" alt="Citizen Manual">
+                <div class="card-body">
+                    <h5 class="card-title">CITIZEN MANUAL</h5>
+                    <p class="card-text">It is a document to describe the functionalities and workflow provided to citizens on the cybercrime portal for reporting cybercrimes.</p>
+                    <a href="learning/citizen.html" class="btn btn-primary btn-hover">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card p-3 shadow hover-effect">
+                <img src="https://cyber.gov.rw/index.php?eID=dumpFile&t=f&f=207&token=98f66f7e9400c90a3c67ba1849d788fad6e580ee" class="card-img-top" alt="Cyber Safety Tips">
+                <div class="card-body">
+                    <h5 class="card-title">CYBER SAFETY TIPS</h5>
+                    <p class="card-text">Follow essential cyber safety practices to protect yourself and your family in the online world.</p>
+                    <a href="learning/cybertip.html" class="btn btn-primary btn-hover">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card p-3 shadow hover-effect">
+                <img src="https://images.pexels.com/photos/5428830/pexels-photo-5428830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="FAQs">
+                <div class="card-body">
+                    <h5 class="card-title">FAQs</h5>
+                    <p class="card-text">Find answers to commonly asked questions to navigate the system effectively, whether you're a first-time user or need clarification.</p>
+                    <a href="FAQs.html" class="btn btn-primary btn-hover">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-4">
+            <div class="card p-3 shadow hover-effect">
+                <img src="https://i0.wp.com/mainedoenews.net/wp-content/uploads/2022/10/2022-Cybersecurity-Month-Graphic.jpg?fit=1080%2C1080&ssl=1" class="card-img-top" alt="Cyber Awareness">
+                <div class="card-body">
+                    <h5 class="card-title">CYBER AWARENESS</h5>
+                    <p class="card-text">Learn about cyber awareness to protect yourself and act responsibly in cyberspace.</p>
+                    <a href="learning/cyberawareness.html" class="btn btn-primary btn-hover">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-4">
+            <div class="card p-3 shadow hover-effect">
+                <img src="https://media1.popsugar-assets.com/files/thumbor/rJ8OGxnbC5w9jMZETq2P4sbOs7Y/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2021/06/07/177/n/47856405/4586084ef54022bf_the_daily_crime/i/Daily-Crime.jpg" class="card-img-top" alt="Daily Digest">
+                <div class="card-body">
+                    <h5 class="card-title">DAILY DIGEST</h5>
+                    <p class="card-text">Comprehensive documents from the Indian Cybercrime Coordination Centre to spread awareness about cyber fraud.</p>
+                    <a href="#" class="btn btn-primary btn-hover">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-md-4">
+            <div class="card p-3 shadow hover-effect">
+                <img src="Source/resurce.jpg" class="card-img-top" alt="Resources">
+                <div class="card-body">
+                    <h5 class="card-title">Resources</h5>
+                    <p class="card-text">Access valuable materials, safety guidelines, reporting procedures, and legal support to address crime-related concerns.</p>
+                    <a href="RESOURCES.html" class="btn btn-primary btn-hover">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- media gallery-->
+<!-- Media Gallery Section -->
+<section class="media-gallery bg-warning  py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">
+            <i class="fas fa-tablet-alt"></i> Media Gallery
+        </h2>
+        
+        <div class="row justify-content-center">
+            
+            <!-- Facebook Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header text-center bg-dark">
+                        <i class="fab fa-facebook-square text-primary fa-lg"></i>
+                        <span class="fw-bold text-primary">Facebook</span>
+                    </div>
+                    <div class="card-body p-2">
+                        <iframe 
+                        src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/CyberDostI4C&tabs=timeline"
+                        width="100%" height="300" style="border:none;overflow:hidden;" 
+                        scrolling="yes" frameborder="0" allowfullscreen>
+                    </iframe>                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Twitter Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header text-center bg-dark">
+                        <i class="fab fa-twitter-square text-info fa-lg"></i>
+                        <span class="fw-bold text-info">Twitter</span>
+                    </div>
+                    <div class="card-body p-2">
+                        <a class="twitter-timeline" data-width="100%" target="_blank" data-height="300"
+                            href="https://twitter.com/CyberDost">Tweets by CyberDost</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YouTube Card -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header text-center bg-dark">
+                        <i class="fab fa-youtube-square text-danger fa-lg"></i>
+                        <span class="fw-bold text-danger">YouTube</span>
+                    </div>
+                    <div class="card-body p-2">
+                        <iframe width="100%" height="300"
+                            src="https://www.youtube.com/embed/j-hJHqATcYI" 
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<h2 class="text-center fw-bold mb-4 text-align: center;">
+    <i class="fas fa-photo-video"></i> Image/videos Gallery
+</h2>
+  
+  <div class="slider-container">
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/29850345/pexels-photo-29850345/free-photo-of-military-parade-at-india-gate-new-delhi.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 1">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/15774367/pexels-photo-15774367/free-photo-of-columns-in-traditional-building-in-delhi.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.pexels.com/photos/12367652/pexels-photo-12367652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3">
+      </div>
+      <div class="gallery-item">
+        <video src="Source/cyber.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-indicators">
+    <div class="indicator active" data-index="0"></div>
+    <div class="indicator" data-index="1"></div>
+    <div class="indicator" data-index="2"></div>
+    <div class="indicator" data-index="3"></div>
+  </div>
+
+  <script>
+    const galleryContainer = document.querySelector('.gallery-container');
+    const indicators = document.querySelectorAll('.indicator');
+    let currentIndex = 0;
+
+    function updateSlider(index) {
+      const slideWidth = document.querySelector('.slider-container').clientWidth;
+      galleryContainer.style.transform = `translateX(-${index * slideWidth}px)`;
+      indicators.forEach(ind => ind.classList.remove('active'));
+      indicators[index].classList.add('active');
+    }
+
+    function autoSlide() {
+      currentIndex = (currentIndex + 1) % indicators.length;
+      updateSlider(currentIndex);
+    }
+
+    indicators.forEach(indicator => {
+      indicator.addEventListener('click', () => {
+        currentIndex = parseInt(indicator.dataset.index);
+        updateSlider(currentIndex);
+      });
+    });
+
+    setInterval(autoSlide, 10000); // Change slide every 10 seconds
+  </script>
+
+      <!-- Useful Links Section -->
+<section class="bg-success py-5">
+    <div class="container">
+        <h4 class="text-dark fw-bold text-center mb-4"> <i class="fas fa-balance-scale"></i>Useful Links <i class="fas fa-balance-scale"></i></h4>
+        <div class="row">
+            
+             <!-- Card 1 -->
+<div class="col-md-4 mb-4">
+    <div class="card border-0 shadow-sm text-center">
+        <div class="card-body">
+            <i class="fas fa-users fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">Ministry of Women & Child Development</h5>
+            <a href="https://wcd.nic.in/" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Visit</a>
+        </div>
+    </div>
+</div>
+
+<!-- Card 2 -->
+<div class="col-md-4 mb-4">
+    <div class="card border-0 shadow-sm text-center">
+        <div class="card-body">
+            <i class="fas fa-shield-alt fa-3x text-danger mb-3"></i>
+            <h5 class="card-title">CERT-In</h5>
+            <a href="https://www.cert-in.org.in/" class="btn btn-outline-danger btn-sm mt-2" target="_blank">Visit</a>
+        </div>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="col-md-4 mb-4">
+    <div class="card border-0 shadow-sm text-center">
+        <div class="card-body">
+            <i class="fas fa-graduation-cap fa-3x text-success mb-3"></i>
+            <h5 class="card-title">Cybercrime Training (NCRB)</h5>
+            <a href="https://ncrb.gov.in/" class="btn btn-outline-success btn-sm mt-2" target="_blank">Visit</a>
+        </div>
+    </div>
+</div>
+
+<!-- Card 4 -->
+<div class="col-md-4 mb-4">
+    <div class="card border-0 shadow-sm text-center">
+        <div class="card-body">
+            <i class="fas fa-globe fa-3x text-warning mb-3"></i>
+            <h5 class="card-title">National Portal of India</h5>
+            <a href="https://www.india.gov.in/" class="btn btn-outline-warning btn-sm mt-2" target="_blank">Visit</a>
+        </div>
+    </div>
+</div>
+
+<!-- Card 5 -->
+<div class="col-md-4 mb-4">
+    <div class="card border-0 shadow-sm text-center">
+        <div class="card-body">
+            <i class="fas fa-book fa-3x text-info mb-3"></i>
+            <h5 class="card-title">NIELIT Cyber Forensics</h5>
+            <a href="https://www.nielit.gov.in/" class="btn btn-outline-info btn-sm mt-2" target="_blank">Visit</a>
+        </div>
+    </div>
+</div>
+
+<!-- Card 6 -->
+<div class="col-md-4 mb-4">
+    <div class="card border-0 shadow-sm text-center">
+        <div class="card-body">
+            <i class="fas fa-university fa-3x text-secondary mb-3"></i>
+            <h5 class="card-title">SVP Police Academy e-Library</h5>
+            <a href="https://svpnpahyd.gov.in/" class="btn btn-outline-secondary btn-sm mt-2" target="_blank">Visit</a>
+        </div>
+    </div>
+</div>
+<div class="d-flex justify-content-center align-items-center w-100">
+    <a href="usefulink.html" class="btn btn-warning btn-lg"> More...</a>
+</div>
+
+        </div>
+    </div>
+</section>
+
+<!-- contact&support -->
+<section class="contact-section py-5 " style="background-color:bisque;">
+    <h4 class="text-dark fw-bold text-center mb-4"> Contacts & Support <i class="fas fa-phone-alt"></i></h4>
+
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-lg-6 mb-4">
+                <div class="card border-0 shadow-sm p-4">
+                    <h3 class="mb-3 text-primary">Contact & Support</h3>
+                    <p><i class="fas fa-map-marker-alt text-danger me-2"></i> 
+                        <a href="https://www.google.com/maps/place/GIET+University/" target="_blank" class="text-dark text-decoration-none"> Gunupur, Odisha, India</a>
+                    </p>
+                    <p><i class="fas fa-phone-alt text-success me-2"></i> 
+                        <a href="tel:+7979932169" class="text-dark text-decoration-none">+91 7979932169</a>
+                    </p>
+                    <p><i class="fas fa-envelope text-warning me-2"></i> 
+                        <a href="mailto:CrimeNet@gmail.com" class="text-dark text-decoration-none">CrimeNet@gmail.com</a>
+                    </p>
+                    <p><i class="fas fa-clock text-info me-2"></i> Monday - Friday: 9 AM - 6 PM</p>
+                    
+                    <div class="social-icons mt-3">
+                        <a href="https://www.facebook.com/ncrbindia/" class="me-3 bg-light text-primary p-2 rounded-circle" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="https://www.instagram.com/cyberdost/" class="me-3 bg-light text-danger p-2 rounded-circle" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://twitter.com/CyberDost" class="me-3 bg-light text-info p-2 rounded-circle" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.youtube.com/cybercrimeawareness" class="me-3 bg-light text-danger p-2 rounded-circle" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>                            
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-6 mb-4">
+                <div class="card border-0 shadow-sm p-4">
+                    <h3 class="mb-3 text-primary">Get in Touch</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="row mt-4">
+            <div class="col-lg-12">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-0">
+                        <iframe id="mapFrame" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function showLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function(position) {
+                        let lat = position.coords.latitude;
+                        let lng = position.coords.longitude;
+                        let mapSrc = `https://www.google.com/maps?q=${lat},${lng}&hl=es;z=14&output=embed`;
+                        document.getElementById("mapFrame").src = mapSrc;
+                    }, function(error) {
+                        alert("Unable to retrieve your location.");
+                    });
+                } else {
+                    alert("Geolocation is not supported by your browser.");
+                }
+            }
+        
+            showLocation();
+        </script>        
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Footer Links -->
+            <div class="col-md-6">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Feedback |</a></li>
+                    <li class="list-inline-item"><a href="FAQs.html" class="text-white text-decoration-none">FAQ |</a></li>
+                    <li class="list-inline-item"><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy |</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Website Policy |</a></li>
+                    <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Disclaimer |</a></li>
+                    <li class="list-inline-item"><a href="contact.html" class="text-white text-decoration-none">Contact Us </a></li>
+                </ul>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="col-md-6 text-end">
+                <a href="https://www.facebook.com/ncrbindia/" class="text-white me-3 social-link" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="https://twitter.com/CyberDost" class="text-white me-3 social-link" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.youtube.com/cybercrimeawareness" class="text-white me-3 social-link" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+                <a href="https://www.instagram.com/cyberdost/" class="text-white me-3 social-link" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://www.linkedin.com/company/ncrb-india/" class="text-white me-3 social-link" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="https://wa.me/919013353535" class="text-white me-3 social-link" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a>
+                <a href="https://t.me/CyberDost" class="text-white me-3 social-link" target="_blank"><i class="fab fa-telegram-plane fa-lg"></i></a>
+                <a href="https://www.reddit.com/r/CyberSecurity/" class="text-white me-3 social-link" target="_blank"><i class="fab fa-reddit fa-lg"></i></a>
+                <a href="https://www.pinterest.com/search/pins/?q=cybercrime" class="text-white me-3 social-link" target="_blank"><i class="fab fa-pinterest fa-lg"></i></a>
+                <a href="https://www.tiktok.com/tag/cybersecurity" class="text-white me-3 social-link" target="_blank"><i class="fab fa-tiktok fa-lg"></i></a>
+                <a href="https://www.snapchat.com/add/cybercrime" class="text-white me-3 social-link" target="_blank"><i class="fab fa-snapchat-ghost fa-lg"></i></a>
+                <a href="https://www.tumblr.com/tagged/cybercrime" class="text-white me-3 social-link" target="_blank"><i class="fab fa-tumblr fa-lg"></i></a>
+                <a href="https://slack.com/signin" class="text-white me-3 social-link" target="_blank"><i class="fab fa-slack fa-lg"></i></a>
+                <a href="https://github.com/topics/cybercrime" class="text-white me-3 social-link" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+                <a href="https://medium.com/tag/cybercrime" class="text-white me-3 social-link" target="_blank"><i class="fab fa-medium-m fa-lg"></i></a>
+                <a href="https://www.quora.com/topic/Cybercrime" class="text-white social-link" target="_blank"><i class="fab fa-quora fa-lg"></i></a>
+            </div>
+        </div>
+        <hr class="border-light">
+        <p class="text-center mb-0">© 2025 CrimeNet. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- FontAwesome Icons -->
+<script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script>
+
+</body>
+</html> 

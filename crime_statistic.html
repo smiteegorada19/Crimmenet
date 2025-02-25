@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Rate Statistics</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    
+    .crime-card {
+        background: #ffe0b2;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .crime-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .crime-card h2 {
+        color: #d84315;
+    }
+    
+    .crime-card p {
+        color: #333;
+        font-size: 18px;
+    }
+    
+    .crime-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    
+    .crime-card .more-info {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: #d84315;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+    
+    .crime-card .more-info:hover {
+        background-color: #bf360c;
+    }
+
+    .map-container {
+        margin-top: 30px;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Crime Rate Statistics</h1>
+        <div class="grid">
+            <div class="crime-card">
+                <h2>West Bengal</h2>
+                <img src="https://www.researchgate.net/publication/337511727/figure/fig1/AS:961479595540480@1606246007489/District-wise-spatial-intensity-of-reported-incidence-of-sexual-harassment-in-West-Bengal.png" alt="West Bengal Crime Rate">
+                <p>Cases per year: <strong>25,000+</strong></p>
+                <a href="#" class="more-info">More Info</a>
+            </div>
+            <div class="crime-card">
+                <h2>Uttar Pradesh</h2>
+                <img src="https://static.theprint.in/wp-content/uploads/2023/04/CHART-5-17.jpg" alt="Uttar Pradesh Crime Rate">
+                <p>Cases per year: <strong>20,000+</strong></p>
+                <a href="#" class="more-info">More Info</a>
+            </div>
+            <div class="crime-card">
+                <h2>Andhra Pradesh</h2>
+                <img src="https://preview.redd.it/violent-crime-rate-by-district-v0-xyk5lmxkg07b1.jpg?width=640&crop=smart&auto=webp&s=c156d1d3d10cc2b819c21804f0af4729fedb9aa5" alt="Telangana Crime Rate">
+                <p>Cases per year: <strong>18,000+</strong></p>
+                <a href="#" class="more-info">More Info</a>
+            </div>
+            <div class="crime-card">
+                <h2>Maharashtra</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Maharashtra_Divisions_Eng.svg" alt="Maharashtra Crime Rate">
+                <p>Cases per year: <strong>22,000+</strong></p>
+                <a href="#" class="more-info">More Info</a>
+            </div>
+            <div class="crime-card">
+                <h2>Bihar</h2>
+                <img src="https://i0.wp.com/panaceaconcept.in/wp-content/uploads/2021/06/Divisions_of_Bihar.svg-min.png?fit=500%2C453&ssl=1" alt="Bihar Crime Rate">
+                <p>Cases per year: <strong>15,000+</strong></p>
+                <a href="#" class="more-info">More Info</a>
+            </div>
+            <div class="crime-card">
+                <h2>Odisha</h2>
+                <img src="data:image/jpeg;base64,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" alt="Odisha Crime Rate">
+                <p>Cases per year: <strong>14,000+</strong></p>
+                <a href="#" class="more-info">More Info</a>
+            </div>
+        </div>
+        <div class="map-container">
+            <h2>Crime Rate Map</h2>
+            <img src="Source/india.webp" alt="Crime Rate Map" />
+        </div>        
+    </div>
+</body>
+</html>

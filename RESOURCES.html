@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Resources</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    
+    .resource-card {
+        background: #e0f7fa;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .resource-card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .resource-card h2 {
+        color: #00796b;
+    }
+    
+    .resource-card p {
+        color: #333;
+    }
+    
+    .resource-card a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #00796b;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
+    .resource-card a:hover {
+        background: #004d40;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Crime Resources</h1>
+        <div class="grid">
+            <div class="resource-card">
+                <h2>Emergency Contacts</h2>
+                <p>Dial <strong>100</strong> for police emergency services.</p>
+                <a href="#">More Info</a>
+            </div>
+            <div class="resource-card">
+                <h2>Cyber Crime Helpline</h2>
+                <p>Report cyber crimes at <strong>1930</strong> or online.</p>
+                <a href="https://cybercrime.gov.in" target="_blank">Visit Website</a>
+            </div>
+            <div class="resource-card">
+                <h2>Women's Safety Helpline</h2>
+                <p>Contact <strong>1091</strong> for women safety assistance.</p>
+                <a href="#">More Info</a>
+            </div>
+            <div class="resource-card">
+                <h2>Child Protection Services</h2>
+                <p>Call <strong>1098</strong> for child help services.</p>
+                <a href="#">More Info</a>
+            </div>
+            <div class="resource-card">
+                <h2>Crime Reporting Portal</h2>
+                <p>Report crimes anonymously online.</p>
+                <a href="frontend\index.html" target="_blank">Visit Website</a>
+            </div>
+            <div class="resource-card">
+                <h2>Legal Aid Services</h2>
+                <p>Free legal assistance available for the needy.</p>
+                <a href="https://nalsa.gov.in" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

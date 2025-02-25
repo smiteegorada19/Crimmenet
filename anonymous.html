@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Anonymously</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body { background-color:powderblue; }
+        .container { margin-top: 30px; max-width: 800px; }
+        .nav-tabs .nav-link { color: #000; }
+        .nav-tabs .nav-link.active { background-color: #007bff; color: white; }
+        .char-count { font-size: 12px; color: red; }
+        .success-message { display: none; padding: 10px; background: #d4edda; color: #155724; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h3 class="text-center text-success">📌 Report Anonymously</h3>
+
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-tabs" id="reportTabs">
+        <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#incidentTab">Complaint & Incident</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#suspectTab">Suspect Details</a></li>
+        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#previewTab">Preview & Submit</a></li>
+    </ul>
+
+    <div class="tab-content mt-3">
+        <!-- Complaint & Incident Details -->
+        <div class="tab-pane fade show active" id="incidentTab">
+            <div class="mb-3">
+                <label class="form-label">Category of Complaint:</label>
+                <select id="complaintCategory" class="form-select">
+                    <option value="">--Select--</option>
+                    <option value="Cyber Crime">Cyber Crime</option>
+                    <option value="Harassment">Harassment</option>
+                    <option value="Fraud">Fraud</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Date & Time of Incident:</label>
+                <input type="date" id="incidentDate" class="form-control">
+                <input type="time" id="incidentTime" class="form-control mt-2">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">State/UT:</label>
+                <input type="text" id="incidentState" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Details of the Incident:</label>
+                <textarea id="incidentDetails" class="form-control" rows="4" maxlength="1500"></textarea>
+                <span class="char-count">1500 characters left</span>
+            </div>
+
+            <button class="btn btn-primary next-btn" data-next="suspectTab">Next</button>
+        </div>
+
+        <!-- Suspect Details -->
+        <div class="tab-pane fade" id="suspectTab">
+            <div class="mb-3">
+                <label class="form-label">Suspect Name:</label>
+                <input type="text" id="suspectName" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Description of Suspect:</label>
+                <textarea id="suspectDescription" class="form-control" rows="3"></textarea>
+            </div>
+
+            <button class="btn btn-secondary prev-btn" data-prev="incidentTab">Previous</button>
+            <button class="btn btn-primary next-btn" data-next="previewTab">Next</button>
+        </div>
+
+        <!-- Preview & Submit -->
+        <div class="tab-pane fade" id="previewTab">
+            <h5>🔎 Review Your Details</h5>
+            <p><strong>Category:</strong> <span id="previewCategory"></span></p>
+            <p><strong>Date & Time:</strong> <span id="previewDateTime"></span></p>
+            <p><strong>State/UT:</strong> <span id="previewState"></span></p>
+            <p><strong>Incident Details:</strong> <span id="previewDetails"></span></p>
+            <p><strong>Suspect Name:</strong> <span id="previewSuspectName"></span></p>
+            <p><strong>Suspect Description:</strong> <span id="previewSuspectDescription"></span></p>
+
+            <button class="btn btn-secondary prev-btn" data-prev="suspectTab">Previous</button>
+            <button class="btn btn-success" id="submitBtn">Submit</button>
+
+            <div class="success-message mt-3" id="successMessage">✔️ Your report has been submitted successfully!</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Character count for textarea
+        $("#incidentDetails").on("input", function () {
+            let remaining = 1500 - $(this).val().length;
+            $(".char-count").text(remaining + " characters left");
+        });
+
+        // Navigation between tabs
+        $(".next-btn").click(function () {
+            let nextTab = $(this).data("next");
+
+            // If moving to preview tab, update preview details
+            if (nextTab === "previewTab") {
+                $("#previewCategory").text($("#complaintCategory").val());
+                $("#previewDateTime").text($("#incidentDate").val() + " " + $("#incidentTime").val());
+                $("#previewState").text($("#incidentState").val());
+                $("#previewDetails").text($("#incidentDetails").val());
+                $("#previewSuspectName").text($("#suspectName").val());
+                $("#previewSuspectDescription").text($("#suspectDescription").val());
+            }
+
+            $(".nav-tabs a[href='#" + nextTab + "']").tab("show");
+        });
+
+        $(".prev-btn").click(function () {
+            let prevTab = $(this).data("prev");
+            $(".nav-tabs a[href='#" + prevTab + "']").tab("show");
+        });
+
+        // Show success message after submission
+        $("#submitBtn").click(function () {
+            $("#successMessage").fadeIn();
+            setTimeout(function () {
+                $("#successMessage").fadeOut();
+            }, 5000);
+        });
+    });
+</script>
+
+</body>
+</html>

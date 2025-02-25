@@ -1,0 +1,626 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    padding-top: 40px;
+}
+
+.carousel {
+    margin-top: 100px; /* Adjust this value based on your navbar height */
+    background-color: #262424;
+}
+
+.navbar {
+    background-color: #1A1F29;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    padding: 40px 15px; /* Adjust top-bottom and left-right padding */
+    height: 80px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    z-index: 1000;
+}
+
+.navbar-brand:hover {
+    color: #ddd;
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('https://www.engliterra.com/wp-content/uploads/2020/03/laws.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 54px;
+    font-weight: bold;
+    color: #f7fef7;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #1a3520, #16a085);
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #1a3520, #16a085);
+}
+
+.features {
+    padding: 60px 20px;
+    background: #d3d0d0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 40px;
+}
+
+.features .feature-item {
+    margin-bottom: 30px;
+}
+
+.features .feature-item img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background: linear-gradient(90deg, #1a3520, #16a085);
+    color: rgb(244, 245, 248);
+    text-align: center;
+    padding: 20px 0;
+}
+.section {
+   padding: 60px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.footers {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footers .links, .footers .social-icons {
+    display: flex;
+    gap: 160px;
+  }
+  .footers a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  .social-icons a {
+    font-size: 18px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  .social-icons a:hover {
+    background-color: #555;
+  }
+  @media (max-width: 600px) {
+    .footers {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .footers .links, .footers .social-icons {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+
+footer {
+    background-color: #222;
+    color: #ddd;
+    padding: 40px 0;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin-right: 15px;
+    color: #00bcd4;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.footer-column h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #00bcd4;
+}
+
+.copyright {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Keyframes for the scrolling effect */
+@keyframes scrollUp {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Styling the vertical marquee container */
+.vertical-marquee {
+    border: 9px outset #1a3520;
+    border-radius: 20px;
+    padding: 10px;
+    background: #f8f9fa;
+}
+
+/* Styling the marquee content */
+.marquee-content {
+    height: 200px;
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: scrollUp 10s linear infinite;
+    animation-play-state: running; /* Ensure the animation runs initially */
+    position: absolute;
+}
+
+/* Pause the animation on hover */
+.marquee-content:hover ul {
+    animation-play-state: paused;
+}
+
+/* Styling each announcement item */
+.marquee-content li {
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Styling the "New" tag */
+.new-tag {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+/*information*/
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, #b27a00, #f4d03f);
+
+}
+
+.btn-hover {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hover:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-container,slider-container {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider-container {
+    font-family: Arial, sans-serif;
+    background-color: #efefef;
+  }
+
+  .slider-container {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .gallery-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .gallery-item {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: bisque;
+    padding: 20px;
+  }
+
+  .gallery-item img,
+  .gallery-item video {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+  }
+
+  .slider-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .indicator {
+    width: 15px;
+    height: 15px;
+    background-color: #cdcbcb;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .indicator.active {
+    background-color: #ff9800;
+  }
+
+   /* navbar-bottom*/
+   .nav-link {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.nav-link:hover {
+    color: #f8d210 !important;
+}
+.dropdown-menu {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.animate-dropdown {
+    animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+  .social-link i.fab.fa-facebook-f {
+color: #1877F2; /* Facebook Blue */
+}
+
+.social-link i.fab.fa-twitter {
+color: #1DA1F2; /* Twitter Blue */
+}
+
+.social-link i.fab.fa-youtube {
+color: #FF0000; /* YouTube Red */
+}
+
+.social-link i.fab.fa-instagram {
+color: #C13584; /* Instagram Gradient */
+}
+
+.social-link i.fab.fa-linkedin-in {
+color: #0077B5; /* LinkedIn Blue */
+}
+
+.social-link i.fab.fa-whatsapp {
+color: #25D366; /* WhatsApp Green */
+}
+
+.social-link i.fab.fa-telegram-plane {
+color: #0088cc; /* Telegram Blue */
+}
+
+.social-link i.fab.fa-reddit {
+color: #FF4500; /* Reddit Orange */
+}
+
+.social-link i.fab.fa-pinterest {
+color: #E60023; /* Pinterest Red */
+}
+
+.social-link i.fab.fa-tiktok {
+color: #010101; /* TikTok Black */
+}
+
+.social-link i.fab.fa-snapchat-ghost {
+color: #FFFC00; /* Snapchat Yellow */
+}
+
+.social-link i.fab.fa-discord {
+color: #7289DA; /* Discord Blue */
+}
+
+.social-link i.fab.fa-tumblr {
+color: #35465D; /* Tumblr Blue */
+}
+
+.social-link i.fab.fa-slack {
+color: #4A154B; /* Slack Purple */
+}
+
+.social-link i.fab.fa-github {
+color: #181717; /* GitHub Black */
+}
+
+.social-link i.fab.fa-dribbble {
+color: #EA4C89; /* Dribbble Pink */
+}
+
+.social-link i.fab.fa-behance {
+color: #1769FF; /* Behance Blue */
+}
+
+.social-link i.fab.fa-medium-m {
+color: #12100E; /* Medium Black */
+}
+
+.social-link i.fab.fa-quora {
+color: #B92B27; /* Quora Red */
+}
+
+/* Hover effect */
+.social-link i.fab:hover {
+opacity: 0.7;
+transform: scale(1.1);
+transition: all 0.3s ease-in-out;
+}
+
+/* useful-links*/
+.card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0px 10px 20px rgba(202, 39, 39, 0.15);
+}
+
+.card-body i {
+transition: color 0.3s ease;
+}
+
+.card:hover .text-primary {
+color: #0056b3 !important;
+}
+
+.card:hover .text-danger {
+color: #a30000 !important;
+}
+
+.card:hover .text-success {
+color: #007f00 !important;
+}
+
+.card:hover .text-warning {
+color: #b38600 !important;
+}
+
+.card:hover .text-info {
+color: #007ea7 !important;
+}
+
+.card:hover .text-secondary {
+color: #5a5a5a !important;
+}
+/* social-media*/
+.social-link i {
+transition: color 0.3s ease;
+}
+
+.social-link i.fab.fa-facebook-f {
+color: #1877F2; /* Facebook Blue */
+}
+
+.social-link i.fab.fa-twitter {
+color: #1DA1F2; /* Twitter Blue */
+}
+
+.social-link i.fab.fa-youtube {
+color: #FF0000; /* YouTube Red */
+}
+
+.social-link i.fab.fa-instagram {
+color: #C13584; /* Instagram Gradient */
+}
+
+.social-link i.fab.fa-linkedin-in {
+color: #0077B5; /* LinkedIn Blue */
+}
+
+.social-link i.fab.fa-whatsapp {
+color: #25D366; /* WhatsApp Green */
+}
+
+.social-link i.fab.fa-telegram-plane {
+color: #0088cc; /* Telegram Blue */
+}
+
+.social-link i.fab.fa-reddit {
+color: #da420a; /* Reddit Orange */
+}
+
+.social-link i.fab.fa-pinterest {
+color: #E60023; /* Pinterest Red */
+}
+
+.social-link i.fab.fa-tiktok {
+color: #010101; /* TikTok Black */
+}
+
+.social-link i.fab.fa-snapchat-ghost {
+color: #FFFC00; /* Snapchat Yellow */
+}
+
+.social-link i.fab.fa-discord {
+color: #7289DA; /* Discord Blue */
+}
+
+.social-link i.fab.fa-tumblr {
+color: #35465D; /* Tumblr Blue */
+}
+
+.social-link i.fab.fa-slack {
+color: #4A154B; /* Slack Purple */
+}
+
+.social-link i.fab.fa-github {
+color: #181717; /* GitHub Black */
+}
+
+.social-link i.fab.fa-dribbble {
+color: #EA4C89; /* Dribbble Pink */
+}
+
+.social-link i.fab.fa-behance {
+color: #1769FF; /* Behance Blue */
+}
+
+.social-link i.fab.fa-medium-m {
+color: #12100E; /* Medium Black */
+}
+
+.social-link i.fab.fa-quora {
+color: #B92B27; /* Quora Red */
+}
+
+/* Hover effect */
+.social-link i.fab:hover {
+opacity: 0.7;
+transform: scale(1.1);
+transition: all 0.3s ease-in-out;
+}
+
+/* media gallery*/
+.media-gallery {
+    background-color: #f8f9fa;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.media-gallery .card {
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+}
+.media-gallery .card:hover {
+    transform: translateY(-5px);
+}
+.media-gallery .card-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#map {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}

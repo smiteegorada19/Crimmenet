@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Help</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background: rgba(255, 0, 0, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+        }
+        .emergency-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: pulse 1.5s infinite;
+            transition: transform 0.2s ease-in-out;
+        }
+        .emergency-btn:hover {
+            transform: scale(1.1);
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.6); }
+            50% { box-shadow: 0 0 20px rgba(255, 0, 0, 1); }
+            100% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.6); }
+        }
+    </style>
+    <script>
+        function requestHelp() {
+            let userId = 123; // Dynamic user ID should be fetched in real case
+
+            fetch('http://127.0.0.1:5000/notify_admin', { // Flask API endpoint
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ user_id: userId })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    Swal.fire({
+                        title: 'Emergency Alert Sent!',
+                        text: 'Law enforcement has been notified. Stay safe!',
+                        icon: 'success',
+                        confirmButtonColor: 'red'
+                    });
+                } else {
+                    Swal.fire('Error!', 'Something went wrong. Try again.', 'error');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                Swal.fire('Error!', 'Failed to connect. Check your network.', 'error');
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>🚨 Emergency Help Needed? 🚨</h2>
+        <p>If you're in danger, press the button below to notify law enforcement immediately.</p>
+        <button class="emergency-btn" onclick="requestHelp()">Request Immediate Help</button>
+    </div>
+</body>
+</html>
